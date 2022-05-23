@@ -4,6 +4,19 @@ import "fmt"
 
 func MeanMedian(arrayInput []float64) (float64, float64) {
 	// your code here
+	var sum float64 = 0
+	for i := 0; i < len(arrayInput); i++{
+		sum = sum + arrayInput[i]
+	}
+	var mean float64 = sum / float64(len(arrayInput))
+	var median float64
+	tampung := len(arrayInput) / 2
+	if len(arrayInput)%2 == 0{
+		median = (arrayInput[tampung - 1]) + arrayInput[tampung]/2
+	}else {
+		median = arrayInput[tampung]
+	}
+	return mean, median
 }
 
 func main() {

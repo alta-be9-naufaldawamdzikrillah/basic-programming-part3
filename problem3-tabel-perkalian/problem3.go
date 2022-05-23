@@ -4,6 +4,8 @@ import "fmt"
 
 func CetakTabelPerkalian(number int) string {
 	// your code here
+	
+
 }
 
 func main() {
